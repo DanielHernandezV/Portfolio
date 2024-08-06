@@ -1,6 +1,7 @@
 import "./proyect-card.styles.scss";
 import { ReactComponent as GitHub } from "../../assets/GitHub.svg";
 import { ReactComponent as View } from "../../assets/View.svg";
+import TechTag from "../techTag/tech-tag.component";
 const ProyectCard = ({ proyect }) => {
   const { name, gitHub, description, techStack, status, link } = proyect;
 
@@ -22,6 +23,11 @@ const ProyectCard = ({ proyect }) => {
             <GitHub className="proyect-card-git-svg" />
           </a>
         </div>
+        <div
+          className={`proyect-card-finish-container proyect-card-finish-container-${status}`}
+        >
+          {status}
+        </div>
         {link && (
           <div className="proyect-card-link-container">
             <a href={link}>
@@ -32,13 +38,16 @@ const ProyectCard = ({ proyect }) => {
 
         <img src={imageSrc} alt={name} />
       </div>
-      <h1>{name}</h1>
+      <h1 className="proyect-card-title">{name}</h1>
       <h2>{description}</h2>
-      <ul>
-        {techStack.map((item) => (
-          <li>{item}</li>
-        ))}
-      </ul>
+      <div className="proyect-card-techStack-container">
+        <h3>TechStack:</h3>
+        <ul>
+          {techStack.map((item) => (
+            <TechTag key={`name-${item}`} nameTag={item} />
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };

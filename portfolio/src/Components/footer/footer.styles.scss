@@ -3,8 +3,11 @@
   grid-row-start: 3;
   background: $secondary;
   margin-top: 1rem;
+  display: flex;
+  align-items: center;
   h3 {
     color: $gray;
-    margin-left: 1rem;
+    margin: 0;
+    padding: 1.5rem;
   }
 }

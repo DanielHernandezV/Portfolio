@@ -7,7 +7,7 @@ const proyects = [
     gitHub: "https://github.com/DanielHernandezV/SIPYME",
     description:
       "This project was developed for the Municipality of San Pablo de Heredia, is a webpage where the owners of small and medium enterprises can add information about their services, products and photos, also can and add their location due to a integration of Google Maps API with a system of markers",
-    techStack: ["MySQL", "ASP.NET", "C#", "Bootstrap", "JavaScript"],
+    techStack: ["MySQL", "ASP.NET", "C", "Bootstrap", "JavaScript"],
     status: "Finished",
     link: "",
   },
@@ -17,8 +17,8 @@ const proyects = [
     gitHub: "https://github.com/DanielHernandezV/CompleteReactCourse",
     description:
       'Proyect developed as part of the "Complete React Developer in 2024, ',
-    techStack: ["React", "HTML", "Styled components", "Firebase", "Redux"],
-    status: "OnGoing",
+    techStack: ["React", "HTML", "StyledComponents", "Firebase", "Redux"],
+    status: "InProgress",
     link: "https://verdant-liger-c37690.netlify.app/",
   },
   {
@@ -26,12 +26,12 @@ const proyects = [
     gitHub: "https://github.com/DanielHernandezV/CSS-Course",
     description:
       "Front-end implementation of a landing page designed to showcase various hosting plans, developed as part of the course 'CSS - The Complete Guide 2024 (incl. Flexbox, Grid & Sass)' on Udemy",
-    techStack: ["Vanilla CSS", "React", "HTML"],
+    techStack: ["CSS", "React", "HTML"],
     status: "Finished",
     link: "https://master--uhostingcss.netlify.app/",
   },
   {
-    name: "Personal Portfolio",
+    name: "Portfolio",
     gitHub: "https://github.com/DanielHernandezV/Perfolio",
     description: "My personal portfolio",
     techStack: ["SASS", "React", "HTML"],

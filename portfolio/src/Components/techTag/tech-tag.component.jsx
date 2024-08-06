@@ -1,16 +1,33 @@
 import "./tech-tag.styles.scss";
-
-const TechTag = ({ children }) => {
-  const getImage = (name) => {
+import { useState, useEffect } from "react";
+const TechTag = ({ nameTag }) => {
+  const getImage = async (name) => {
     try {
-      return require(`../../assets/${name}.svg`);
+      const image = await import(`../../assets/${name}.svg`);
+      return image.default;
     } catch (error) {
-      console.error("No se pudo cargar la imagen:", name);
       return null;
     }
   };
+  const [image, setImage] = useState(null);
 
-  return <div className="tech-stack-container">{children}</div>;
+  useEffect(() => {
+    getImage(nameTag).then(setImage);
+  }, [nameTag]);
+
+  return (
+    <>
+      {image ? (
+        <div className="tech-stack-container">
+          <img src={image} alt={nameTag} />
+        </div>
+      ) : (
+        <div className="tech-stack-container">
+          <h1>{nameTag}</h1>
+        </div>
+      )}
+    </>
+  );
 };
 
 export default TechTag;

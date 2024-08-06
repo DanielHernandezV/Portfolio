@@ -26,4 +26,10 @@
   grid-auto-rows: minmax(25rem, auto);
 
   gap: 1rem;
+  @media (max-width: 62rem) {
+    grid-template-columns: minmax(30%, 20rem) minmax(30%, 20rem);
+  }
+  @media (max-width: 40rem) {
+    grid-template-columns: minmax(30%, 20rem);
+  }
 }

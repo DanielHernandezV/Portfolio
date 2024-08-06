@@ -6,7 +6,7 @@ body {
 }
 #root {
   display: grid;
-  grid-template-rows: [navBar]4.5rem [body]auto 4rem;
+  grid-template-rows: [navBar]4.5rem [body]auto [footer]auto;
   height: 100vh;
 }
 code {

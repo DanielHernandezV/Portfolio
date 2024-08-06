@@ -2,14 +2,18 @@
 
 .proyect-card-container {
   background-color: rgba($gray, 0.9);
-  border-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   display: flex;
   flex-direction: column;
   text-align: center;
   position: relative;
-  h1 {
+  overflow: hidden;
+  border: $third 1.5px solid;
+  .proyect-card-title {
     font-size: 1rem;
     margin: 0;
+    margin-bottom: 1rem;
     color: $secondary;
     background-color: rgba($hover, 0.9);
   }
@@ -18,13 +22,29 @@
     font-weight: 600;
     color: $third;
     padding: 0.3rem 0.5rem;
-    margin: 0;
+    margin: auto 1rem;
+    border-radius: 8px;
     text-align: justify;
     background-color: rgba($gray, 0.9);
   }
+  h3 {
+    font-size: 0.9rem;
+    text-align: center;
+    color: $secondary;
+    margin: 0.3rem 0;
+  }
   ul {
     text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0.5rem minmax(0.5rem, auto);
   }
+}
+.proyect-card-techStack-container {
+  margin-top: auto;
 }
 .proyect-card-git-container {
   position: absolute;
@@ -42,6 +62,21 @@
     }
   }
 }
+.proyect-card-finish-container {
+  background-color: greenyellow;
+
+  transform: rotate(-45deg) translateX(-2.9rem) translateY(-0.5rem);
+  position: absolute;
+  width: 10rem;
+  font-size: 1rem;
+  font-weight: 800;
+  color: $third;
+  padding: 0.2rem 0;
+}
+.proyect-card-finish-container-InProgress {
+  background-color: $red;
+}
+
 .proyect-card-link-container {
   position: absolute;
   z-index: 1;
@@ -61,13 +96,19 @@
 .proyect-card-image-container {
   background-color: rgba($maincolor, 0.9);
   width: 100%;
-  height: 15rem;
+  height: 14rem;
 
-  border-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+
   overflow: hidden;
   img {
-    width: 90%;
+    width: 100%;
     height: 100%;
-    scale: 0.8;
+    &[src*="uHost"] {
+      width: 186px;
+      height: 190px;
+      transform: translateY(10%);
+    }
   }
 }
