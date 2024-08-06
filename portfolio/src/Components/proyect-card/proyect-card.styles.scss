@@ -1,0 +1,73 @@
+@import "../../variables.styles.scss";
+
+.proyect-card-container {
+  background-color: rgba($gray, 0.9);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  h1 {
+    font-size: 1rem;
+    margin: 0;
+    color: $secondary;
+    background-color: rgba($hover, 0.9);
+  }
+  h2 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: $third;
+    padding: 0.3rem 0.5rem;
+    margin: 0;
+    text-align: justify;
+    background-color: rgba($gray, 0.9);
+  }
+  ul {
+    text-align: left;
+  }
+}
+.proyect-card-git-container {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 1;
+  .proyect-card-git-svg {
+    width: 100%;
+    height: 100%;
+    transition: scale 3s ease-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+.proyect-card-link-container {
+  position: absolute;
+  z-index: 1;
+  width: 2rem;
+  height: 2rem;
+  top: 0.5rem;
+  right: 3rem;
+  .proyect-card-git-svg {
+    width: 100%;
+    height: 100%;
+    transition: scale 3s ease-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+.proyect-card-image-container {
+  background-color: rgba($maincolor, 0.9);
+  width: 100%;
+  height: 15rem;
+
+  border-radius: 8px;
+  overflow: hidden;
+  img {
+    width: 90%;
+    height: 100%;
+    scale: 0.8;
+  }
+}

@@ -1,0 +1,10 @@
+@import "../../variables.styles.scss";
+.main-footer {
+  grid-row-start: 3;
+  background: $secondary;
+  margin-top: 1rem;
+  h3 {
+    color: $gray;
+    margin-left: 1rem;
+  }
+}

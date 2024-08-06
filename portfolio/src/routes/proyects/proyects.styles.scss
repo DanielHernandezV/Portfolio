@@ -1,0 +1,29 @@
+@import "../../variables.styles.scss";
+.main-proyect-container-flex {
+  display: flex;
+  justify-content: center;
+}
+.main-proyect-background {
+  background: url(../../images/proyects-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: fixed;
+  z-index: -1000;
+  height: 100vh;
+  width: 100vw;
+}
+.main-proyect-container {
+  grid-row: 2;
+  display: grid;
+  margin: 2rem auto;
+  grid-template-columns: minmax(30%, 20rem) minmax(30%, 20rem) minmax(
+      30%,
+      20rem
+    );
+
+  grid-auto-rows: minmax(25rem, auto);
+
+  gap: 1rem;
+}

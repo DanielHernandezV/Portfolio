@@ -1,0 +1,74 @@
+@import "../../variables.styles.scss";
+
+.main-navbar-container {
+  background: $third;
+  /*   background: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 4%,
+    rgba(10, 7, 56, 1) 89%,
+    rgba(2, 10, 46, 1) 90%,
+    rgba(16, 16, 65, 1) 100%
+  ); */
+  display: flex;
+  position: fixed;
+  align-items: center;
+  z-index: 3000;
+  width: 100vw;
+  height: 4.5rem;
+  justify-content: space-between;
+}
+.main-navbar-image-container-movile {
+  width: 4rem;
+  height: 4rem;
+  margin-left: 1rem;
+  display: none;
+}
+@media (max-width: 40rem) {
+  .main-navbar-container ul a {
+    display: none;
+  }
+  .main-navbar-image-container-movile {
+    display: block;
+  }
+  .main-navbar-container {
+    justify-content: flex-start;
+  }
+}
+
+.main-navbar-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.main-navbar-svg:hover {
+  width: 100%;
+  height: 100%;
+  scale: 1.2;
+  transition: scale 2s, transform 2s;
+  transform: rotateZ(360deg);
+}
+.main-navbar ul {
+  display: flex;
+}
+.main-navbar-image-container {
+  width: 4rem;
+  height: 4rem;
+  margin-left: 1rem;
+}
+.main-navbar-image {
+  cursor: pointer;
+}
+.main-navbar a {
+  padding: 0.4rem;
+  font-size: 1.1rem;
+  margin: 0 1rem;
+  font-weight: bolder;
+  color: $white;
+  border-bottom: 0.2rem $highlight solid;
+}
+.main-navbar a:hover,
+.main-navbar a:active {
+  border-color: $gray;
+
+  color: $hover;
+}

@@ -1,0 +1,18 @@
+@import "../../variables.styles.scss";
+.technologies-brand-container {
+  margin-top: 1rem;
+  padding: 0.3rem;
+  background-color: rgba(57, 60, 60, 0.447);
+  display: flex;
+  justify-content: center;
+}
+.technologies-brand-image-container {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 0.2rem;
+}
+.technologies-brand-svg {
+  width: 100%;
+  height: 100%;
+  transition: scale 0.3s ease-out;
+}
