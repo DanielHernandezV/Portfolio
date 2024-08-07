@@ -44,11 +44,11 @@ const timeLine = [
     type: "work",
   },
   {
-    title: "Information Systems Engineering Diploma ",
+    title: "Computer applications programming Diploma ",
     date: "May 2023",
     description:
-      "I finished my Information Systems Engineering Diploma at Universidad Nacional de Costa Rica (UNA)",
-    link: "",
+      "I finished my Computer applications programming Diploma at Universidad Nacional de Costa Rica (UNA)",
+    link: "https://daniel-hernandez-cv.s3.amazonaws.com/Diplomado+en+programacion+de+aplicaciones+informaticas.pdf",
     type: "education",
   },
   {
@@ -74,7 +74,7 @@ const timeLine = [
     date: "Nov 2019",
     description:
       'I finished my high school diploma at "Colegio Técnico Profesional de Mercedes Norte", where I also earned a technical diploma in accounting.',
-    link: "https://www.ctpmercedesnorte.com/",
+    link: "https://daniel-hernandez-cv.s3.amazonaws.com/Bachillerato+en+Educacion+Media.pdf",
     type: "education",
   },
 ];

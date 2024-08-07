@@ -16,7 +16,7 @@ const proyects = [
 
     gitHub: "https://github.com/DanielHernandezV/CompleteReactCourse",
     description:
-      'Proyect developed as part of the "Complete React Developer in 2024, ',
+      'Project developed as part of the "Complete React Developer in 2024" course. This is a React application that simulates an online clothing store, featuring authentication via Firebase with Google Sign-In and user login. ',
     techStack: ["React", "HTML", "StyledComponents", "Firebase", "Redux"],
     status: "InProgress",
     link: "https://verdant-liger-c37690.netlify.app/",
