@@ -12,13 +12,11 @@ const MovileNav = ({ active, toggle }) => {
       <nav className={`mobile-nav  ${active ? "mobile-nav-active" : ""} `}>
         <ul className="mobile-nav__items">
           <li className="mobile-nav__item">
-            <a href="">Proyects</a>
+            <a href="proyects">Proyects</a>
           </li>
-          <li className="mobile-nav__item">
-            <a href="">Education/Certification</a>
-          </li>
+
           <li className="mobile-nav__item mobile-nav__item--cta">
-            <a href="">My journey</a>
+            <a href="myjourney">My journey</a>
           </li>
         </ul>
       </nav>

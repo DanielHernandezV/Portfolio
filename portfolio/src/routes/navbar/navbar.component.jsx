@@ -27,11 +27,9 @@ const Navbar = () => {
             <li>
               <a href="proyects">Projects</a>
             </li>
+
             <li>
-              <a href="">Education/Certification</a>
-            </li>
-            <li>
-              <a href="">My journey</a>
+              <a href="myjourney">My journey</a>
             </li>
           </ul>
         </nav>

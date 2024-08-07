@@ -1,0 +1,18 @@
+@import "./../../variables.styles.scss";
+
+.my-journey-container {
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+}
+.my-journey-background {
+  background: url(../../images/proyects-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: fixed;
+  z-index: -1000;
+  height: 100vh;
+  width: 100vw;
+}
