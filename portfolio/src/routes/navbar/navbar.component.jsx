@@ -4,7 +4,7 @@ import Footer from "../../Components/footer/footer.component";
 import { ReactComponent as Svg1 } from "../../assets/space-svgrepo-com.svg";
 import { ReactComponent as MovileSvg } from "../../assets/icons8-menu.svg";
 import MovileNav from "../../Components/movile-nav/movile-nav.component";
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 
 const Navbar = () => {
   const [modalActive, setmodalActive] = useState(false);
@@ -25,11 +25,11 @@ const Navbar = () => {
         <nav className="main-navbar">
           <ul>
             <li>
-              <a href="proyects">Projects</a>
+              <Link to="proyects">Projects</Link>
             </li>
 
             <li>
-              <a href="myjourney">My journey</a>
+              <Link to="myjourney">My journey</Link>
             </li>
           </ul>
         </nav>

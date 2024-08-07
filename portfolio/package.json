@@ -1,3 +1,4 @@
+
 {
   "name": "ejemplo",
   "version": "0.1.0",
@@ -15,6 +16,7 @@
     "sass": "^1.77.8",
     "web-vitals": "^2.1.4"
   },
+
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
