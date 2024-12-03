@@ -1,7 +1,4 @@
-import "./proyects.styles.scss";
-import ProyectCard from "../../Components/proyect-card/proyect-card.component";
-
-const proyects = [
+export const PROYECTS_DATA = [
   {
     name: "SIPYME",
     gitHub: "https://github.com/DanielHernandezV/SIPYME",
@@ -12,7 +9,7 @@ const proyects = [
     link: "",
   },
   {
-    name: "crownClothing",
+    name: "crownCloding",
 
     gitHub: "https://github.com/DanielHernandezV/CompleteReactCourse",
     description:
@@ -39,17 +36,3 @@ const proyects = [
     link: "",
   },
 ];
-const Proyects = () => {
-  return (
-    <>
-      <div className="main-proyect-background" />
-
-      <div className="main-proyect-container">
-        {proyects.map((proyect) => (
-          <ProyectCard key={proyect.name} proyect={proyect} />
-        ))}
-      </div>
-    </>
-  );
-};
-export default Proyects;

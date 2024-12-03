@@ -1,7 +1,4 @@
-import TimeLine from "../../Components/time-line/time-line.component";
-import "./my-journey.styles.scss";
-//type education,certification, work
-const timeLine = [
+export const JOURNEY_DATA = [
   {
     title: "Support Technician Level III",
     date: "2024-08 - Present",
@@ -14,7 +11,7 @@ const timeLine = [
     title: "Information Systems Engineering Bachelor's Degree",
     date: "2024-11",
     description:
-      "I finished my bachelor's degree in information systems engineering at the National University of Costa Rica.",
+      "Career plan: https://documentos.una.ac.cr/bitstream/handle/unadocs/13581/Bach.%20Informatica.pdf?sequence=6&isAllowed=y",
     link: "https://daniel-hernandez-cv.s3.us-east-1.amazonaws.com/Bachillerato.pdf",
     type: "education",
   },
@@ -86,15 +83,3 @@ const timeLine = [
     type: "education",
   },
 ];
-
-const MyJourney = () => {
-  return (
-    <>
-      <div className="my-journey-background" />
-      <div className="my-journey-container">
-        <TimeLine timeLine={timeLine} />
-      </div>
-    </>
-  );
-};
-export default MyJourney;

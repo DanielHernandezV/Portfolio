@@ -1,0 +1,3 @@
+export const JOURNEY_ACTION_TYPES = {
+  UPDATE_JOURNEY: "journey/UPDATE_JOURNEY",
+};
