@@ -7,7 +7,7 @@ const timeLine = [
     date: "2024-08 - Present",
     description:
       "In my current role at Intel, I have demonstrated a strong ability to quickly adapt to the company’s unique processes,showcasing a high capacity for learning, producing high-quality documentation, and excelling under pressure to meet strict deadlines and uphold Intel’s standards of excellence ",
-    link: "https://www.udemy.com/course/complete-react-developer-zero-to-mastery/",
+    link: "",
     type: "work",
   },
   {
