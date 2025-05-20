@@ -3,10 +3,18 @@ import "./my-journey.styles.scss";
 //type education,certification, work
 const timeLine = [
   {
-    title: "Support Technician Level III",
-    date: "2024-08 - Present",
+    title: "Full stack developer",
+    date: "2025-04 - Pressent",
+    description: "Full stack developer in Evertec ",
+    link: "",
+    type: "work",
+  },
+  {
+    title:
+      "Support Technician Level III InfoTree Global Solutions (outsourced a Intel Corporation)",
+    date: "2024-08 - 2025-03",
     description:
-      "In my current role at Intel, I have demonstrated a strong ability to quickly adapt to the company’s unique processes,showcasing a high capacity for learning, producing high-quality documentation, and excelling under pressure to meet strict deadlines and uphold Intel’s standards of excellence ",
+      "Demonstrated a strong ability to quickly adapt to the company’s unique processes,showcasing a high capacity for learning, producing high-quality documentation, and excelling under pressure to meet strict deadlines and uphold Intel’s standards of excellence ",
     link: "",
     type: "work",
   },
