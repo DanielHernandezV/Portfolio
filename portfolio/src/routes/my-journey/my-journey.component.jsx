@@ -11,7 +11,7 @@ const timeLine = [
   },
   {
     title:
-      "Support Technician Level III InfoTree Global Solutions (outsourced a Intel Corporation)",
+      "Support Technician Level III | Intel (outsourced by InfoTree) | Heredia, Belén",
     date: "2024-08 - 2025-03",
     description:
       "Demonstrated a strong ability to quickly adapt to the company’s unique processes,showcasing a high capacity for learning, producing high-quality documentation, and excelling under pressure to meet strict deadlines and uphold Intel’s standards of excellence ",
